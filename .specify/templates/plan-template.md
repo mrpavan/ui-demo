@@ -1,6 +1,6 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `[JIRA-ID-FEA-Short-Title]` (see constitution Git Workflow) | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
@@ -31,7 +31,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+Verify compliance with Angular SPA Constitution principles:
+- [ ] Component-based architecture: All UI features use standalone Angular components
+- [ ] TypeScript-first: Strict typing, no `any` without justification
+- [ ] Test-first: Test coverage plan defined (unit, integration, E2E)
+- [ ] Performance: Lazy loading strategy, bundle size targets defined
+- [ ] Security: Input validation, XSS/CSRF protection plan
+- [ ] Accessibility: WCAG 2.1 AA compliance plan
+- [ ] Modern Angular: Standalone components, Signals (if applicable), RxJS best practices
+
+Any violations must be documented in Complexity Tracking section below.
 
 ## Project Structure
 
